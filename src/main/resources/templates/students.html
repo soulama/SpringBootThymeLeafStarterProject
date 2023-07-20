@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+</head>
+<body>
+ 
+    <table>
+        <tr>
+          <th>Student ID</th>
+          <th>Student Name</th>
+          <th>Student Email</th>
+          <th>Student Phone Number</th>
+        </tr>
+        <tr th:each="student:${students}">
+          <td th:text="${student.studentId}">10000</td>
+          <td th:text="${student.name}">Muhammed Essa</td>
+          <td th:text="${student.email}">Kirkuk - Iraq</td>
+          <td th:text="${student.tel}">Kirkuk - Iraq</td>
+        </tr>
+        
+      </table>
+
+    
+</body>
+</html>
